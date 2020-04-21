@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width initial-scale=1">
         <title>STEMComp 2020</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     </head>
 
     <!-- move the css to another file eventually lol -->
@@ -94,7 +95,7 @@
             animation-duration: 1s;
         }
 
-        @media (min-width: 220vh) { /*accomodate window dragged wide (horizontally)*/
+        @media (min-width: 182vh) { /*accomodate window dragged wide (horizontally)*/
             div {
                 height: 55vw;
                 width: auto;
@@ -104,37 +105,17 @@
                 background-attachment: scroll;
             }           
         }
-        
-        /* note for future: mobile view (or just small window) will need altered text and button display!!! */
-
-        @media (min-height: 40vw) {
-            div {
-                width: 100vw;
-                height: 56vw;  /*play around with this, view might be too small but images return to exact ratio*/
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-attachment: scroll;
-            }
-        }
-
-        /* playing with media queries */
-
-        /* at this point, make mobile display (later) */
-
-        @media (max-width: 1070px) {
-
-        }
-
-        
+       
     </style>
 
 
+<div class="fluid-container">
+    
     <body>
 
         <header class="nav-bar">
             <button type="button" class="nav-button" style="margin-left:0vw">About</button>
-            <button type="button" class="nav-button">How to Compete</button>
+            <button type="button" class="nav-button">Competition Details</button>
             <button type="button" class="nav-button">Prizes</button>
             <button type="button" class="nav-button">Our Sponsors</button>
             <button type="button" class="nav-button" style="margin-right:5vw">Contact Us</button>
@@ -142,22 +123,28 @@
             <button type="button" class="login-button" style="margin-right:3vw">Log In</button>
         </header>
 
-        <div class="intro-block">
-            <header>
-            </header>
+        <div id="title" class="intro-block">
         </div>
 
-        <div class="mid-block-1">
+        <div id="video" class="mid-block-1">
         </div>
 
-        <div class="mid-block-2">
+        <div id="info" style="background-color:#390072">
         </div>
 
-        <div class="end-block">
+        <div id="prizes" class="mid-block-2">
+        </div>
+
+        <div id="sponsors" style="background-color:#b1d3ff">
+        </div>
+
+        <div id="contact" class="end-block">
         </div>
 
         <footer>
         </footer>
 
     </body>
+
+    </div>
 </html>
