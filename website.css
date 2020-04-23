@@ -2,6 +2,23 @@
     font-family:'Lucida Sans'
 }
 
+.middle {
+    background-color: #390072;
+
+}
+
+.header {
+    background-color: #390072;
+    background-image: url("images/2crop.png");
+    width: initial;
+    height: auto;
+}
+
+.mid-block-2 {
+    background-color: #390072;
+    background-image: url("images/3.png");
+}
+
 body {
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
@@ -17,26 +34,41 @@ div {
     background-attachment: scroll;
 }
 
+p {
+    font-size: 1.5vmax;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 4.5vmax;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
 .intro-block {
     background-color: #b1d3ff;
     background-image: url("images/1.png");
 }
 
-.middle {
-    background-color: #390072;
-
+.logo {
+    height: 15vmax;
+    width: 15vmax;
 }
 
-.header {
+.sponsor-logo-l {
+    height: 15vw;
+    width: auto;
+}
+
+.sponsor-logo-s {
+    height: 8vw;
+    width: auto;
+}
+
+.mid-block-1 {
     background-color: #390072;
     background-image: url("images/2.png");
-    width: initial;
-    height: auto;
-}
-
-.mid-block-2 {
-    background-color: #390072;
-    background-image: url("images/3.png");
 }
 
 .end-block {
@@ -44,42 +76,51 @@ div {
     background-image: url("images/4.png");
 }
 
-.nav-bar {
+/* dELETE THIS LATER */
+.my-nav {
     background-color: #b1d3ff;
-    background-size: cover;
-    height: 7vmax;
-    width: auto;
-    text-align: right;
+}
+
+button {
+    text-align: center;
+    border: none;
+    padding: 0.7vw 1vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
 .nav-button {
     background-color: #d4e7ff;
     color: #41364C;
-    text-align: center;
-    border: none;
-    padding: 0.7vw 1vw;
-    margin: 2vw 1vw 0vw 1vw;
+    margin: 0vw 1vw 0vw 1vw;
     font-size: 1vw;
-    /*just for now*/
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
 .login-button {
     background-color: #BF93BC;
     color: #41364C;
-    text-align: center;
-    border: none;
-    padding: 0.7vw 1vw;
-    margin: 2vw 1vw 0vw 1vw;
+    margin: 0vw 1vw 0vw 1vw;
     font-size: 1vw;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.register-button {
+    background-color: #f6b26bff;
+    color: #666666;
+    font-size: 1.5vmax;
 }
 
 button:hover {
     animation-name: button-anim;
-    animation-duration: 0.6s;
+    animation-duration: 0.4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+.sponsor-logo-l:hover {
+    box-shadow: 0vmin 0vmin 2vmin 0.5vmin #7da4d4;
+}
+
+.sponsor-logo-s:hover {
+    box-shadow: 0vmin 0vmin 2vmin 0.5vmin #7da4d4;
 }
 
 @keyframes button-anim {
@@ -93,7 +134,7 @@ button:hover {
     animation-duration: 1s;
 }
 
-@media (min-width: 220vh) { /*accomodate window dragged wide (horizontally)*/
+@media (min-width: 182vh) { /*accomodate window dragged wide (horizontally)*/
     div {
         height: 55vw;
         width: auto;
@@ -102,25 +143,4 @@ button:hover {
         background-repeat: no-repeat;
         background-attachment: scroll;
     }           
-}
-
-/* note for future: mobile view (or just small window) will need altered text and button display!!! */
-
-@media (min-height: 40vw) {
-    div {
-        width: 100vw;
-        height: 56vw;  /*play around with this, view might be too small but images return to exact ratio*/
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-    }
-}
-
-/* playing with media queries */
-
-/* at this point, make mobile display (later) */
-
-@media (max-width: 1070px) {
-
 }
