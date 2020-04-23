@@ -75,18 +75,6 @@ div {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
-.video {
-    text-align: center;
-    margin-top: 25%;
-    font-family:'Arial';
-    color: white;
-    font-weight: lighter;
-}
-
-svg {
-    padding-left: 40%;
-}
-
 button:hover {
     animation-name: button-anim;
     animation-duration: 0.6s;
