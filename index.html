@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width initial-scale=1">
         <title>STEMComp 2020</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
 
     <!-- move the css to another file eventually lol -->
@@ -26,9 +26,36 @@
             background-attachment: scroll;
         }
 
+        p {
+            font-size: 1.5vmax;
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        }
+
+        h1 {
+            font-size: 4.5vmax;
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        }
+
         .intro-block {
             background-color: #b1d3ff;
             background-image: url("images/1.png");
+        }
+
+        .logo {
+            height: 15vmax;
+            width: 15vmax;
+        }
+
+        .sponsor-logo-l {
+            height: 15vw;
+            width: auto;
+        }
+
+        .sponsor-logo-s {
+            height: 8vw;
+            width: auto;
         }
 
         .mid-block-1 {
@@ -46,42 +73,51 @@
             background-image: url("images/4.png");
         }
 
-        .nav-bar {
+        /* dELETE THIS LATER */
+        .my-nav {
             background-color: #b1d3ff;
-            background-size: cover;
-            height: 7vmax;
-            width: auto;
-            text-align: right;
+        }
+        
+        button {
+            text-align: center;
+            border: none;
+            padding: 0.7vw 1vw;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
         }
 
         .nav-button {
             background-color: #d4e7ff;
             color: #41364C;
-            text-align: center;
-            border: none;
-            padding: 0.7vw 1vw;
-            margin: 2vw 1vw 0vw 1vw;
+            margin: 0vw 1vw 0vw 1vw;
             font-size: 1vw;
-            /*just for now*/
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
         }
 
         .login-button {
             background-color: #BF93BC;
             color: #41364C;
-            text-align: center;
-            border: none;
-            padding: 0.7vw 1vw;
-            margin: 2vw 1vw 0vw 1vw;
+            margin: 0vw 1vw 0vw 1vw;
             font-size: 1vw;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        }
+
+        .register-button {
+            background-color: #f6b26bff;
+            color: #666666;
+            font-size: 1.5vmax;
         }
 
         button:hover {
             animation-name: button-anim;
-            animation-duration: 0.6s;
+            animation-duration: 0.4s;
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
+        }
+
+        .sponsor-logo-l:hover {
+            box-shadow: 0vmin 0vmin 2vmin 0.5vmin #7da4d4;
+        }
+
+        .sponsor-logo-s:hover {
+            box-shadow: 0vmin 0vmin 2vmin 0.5vmin #7da4d4;
         }
 
         @keyframes button-anim {
@@ -109,42 +145,206 @@
     </style>
 
 
+<!-- will need to adjust sizes and margins for mobile view -->
+
 <div class="fluid-container">
-    
+
     <body>
 
-        <header class="nav-bar">
-            <button type="button" class="nav-button" style="margin-left:0vw">About</button>
-            <button type="button" class="nav-button">Competition Details</button>
-            <button type="button" class="nav-button">Prizes</button>
-            <button type="button" class="nav-button">Our Sponsors</button>
-            <button type="button" class="nav-button" style="margin-right:5vw">Contact Us</button>
-            <button type="button" class="login-button">Register</button>
-            <button type="button" class="login-button" style="margin-right:3vw">Log In</button>
+        <!-- NAVIGATION MENU ------------------------------------------------------->
+        <!-- needs to be made more responsive -->
+        <header>
+            <nav class="navbar navbar-expand-sm my-nav">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="STEMComp 2020" style="height:5vmax; width:5vmax; margin-right: 2vmax">
+                </a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <button class="nav-button">About</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-button">Competition Details</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-button">Prizes</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-button">Our Sponsors</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-button">Contact Us</button>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <button class="login-button">Register</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="login-button">Log in</button>
+                    </li>     
+                </ul>          
+            </nav>
         </header>
 
-        <div id="title" class="intro-block">
+        <!-- TITLE BLOCK ----------------------------------------------------------->
+
+        <div class="intro-block" id="title">
+
+            <div class="container-fluid">
+
+            <div class="row" style="height:auto">
+                <div class="col-3" style="margin-left: 13vmin; margin-top: 38vh; height:auto">
+                    <p>Waterloo region's largest high school STEM competition:</p>
+                </div>
+            </div>
+
+            <div class="row" style="height:auto">
+                <div class="col-2" style="margin-left: 13vmin; margin-right: 2vmin; height:auto">
+                    <img src="images/logo.png" class="logo">
+                </div>
+                <div class="col my-auto" style="height:auto">
+                    <h1 style="text-align: left">STEMComp</h1>
+                    <h1 style="text-align: left">2020</h1>
+                </div>
+            </div>
+
+            <div class="row" style="height:auto">
+                <div class="col-7" style="margin-left: 13vmin; margin-bottom: 2vmin; height:auto">
+                    <p>Show us your passion for problem-solving for a chance to win $750.</p>
+                </div>
+            </div>
+
+            <div class="row" style="height:auto">
+                <div class="col-4" style="margin-left: 13vmin; height:auto">
+                    <button class="register-button">Register to Compete</button>
+                </div>
+            </div>
+
         </div>
 
-        <div id="video" class="mid-block-1">
         </div>
+
+        <!-- VIDEO BLOCK ------------------------------------------------------------>
+
+        <div class="mid-block-1" id="video">
+            <div class="container-fluid">
+            </div>
+        </div>
+
+        <!-- EXPLAINING STEMCOMP BLOCK ---------------------------------------------->
 
         <div id="info" style="background-color:#390072">
+            <div class="container-fluid">
+            </div>
         </div>
 
-        <div id="prizes" class="mid-block-2">
+        <!-- PRIZES BLOCK ---------------------------------------------------------->
+
+        <div class="mid-block-2" id="prizes">
+            <div class="container-fluid">
+                
+                <div class="row" style="height:auto">
+                    <div class="col-12" style="height:auto; text-align:left; margin-bottom:7vh; margin-left:7vmin">
+                        <h1>Prizes</h1>
+                        <p style="margin-top:3vh">Cash prizes are awarded to the top three submissions in each category!</p>
+                    </div>
+                </div>
+
+                <div class="row" style="height:auto">
+                    <div class="col-4 my-auto" style="height:auto; text-align:center">
+                        <p style="color:#b1d3ff">First place</p>
+                    </div>
+                    <div class="col-4 my-auto" style="height:auto; text-align:center">
+                        <p style="color:#b1d3ff">Second place</p>
+                    </div>
+                    <div class="col-4 my-auto" style="height:auto; text-align:center">
+                        <p style="color:#b1d3ff">Third place</p>
+                    </div>
+                </div>
+                
+                <div class="row" style="height:auto">
+                    <div class="col-4 my-auto" style="height:auto; text-align:center">
+                        <h1 style="font-size: 7vmax; color:#f6b26bff">$750</h1>
+                    </div>
+                    <div class="col-4 my-auto" style="height:auto; text-align:center">
+                        <h1 style="font-size: 7vmax; color:#f6b26bff">$500</h1>
+                    </div>
+                    <div class="col-4 my-auto" style="height:auto; text-align:center">
+                        <h1 style="font-size: 7vmax; color:#f6b26bff">$250</h1>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-        <div id="sponsors" style="background-color:#b1d3ff">
+        <!-- SPONSORS BLOCK -------------------------------------------------------->
+
+        <div id="sponsors" style="background-color: #b1d3ff; height:auto">
+
+            <div class="container-fluid" style="height:auto">
+
+                <div class="row" style="height:auto">
+                    <div class="col-12" style="height:auto; margin-top: 20vh">
+                        <h1 style="text-align: center">Thank you to our sponsors!</h1>
+                    </div>
+                </div>
+
+                <div class="row" style="height:auto">
+                    <div class="col-6" style="height:auto; margin-top: 15vh; text-align: center">
+                        <a href="https://www.dukeofed.org/p2pgrants" target="_blank">
+                            <img src="images/grantlogo.jpg" class="sponsor-logo-l">
+                        </a>
+                    </div>
+                    <div class="col-6" style="height:auto; margin-top: 15vh; text-align: center">
+                        <a href="http://www.elmirapet.com/" target="_blank">
+                            <img src="images/epplogo.png" class="sponsor-logo-l">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row" style="height:auto">
+                    <div class="col-12" style="height: auto; margin-top: 7vh; text-align: center">
+                        <a href="https://airbossofamerica.com/" target="_blank">
+                            <img src="images/airbosslogo.png" class="sponsor-logo-l" style="height:20vw">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row" style="height:auto">
+                    <div class="col-4" style="height: auto; margin-top: 10vh; margin-bottom: 15vh; text-align: center">
+                        <a href="https://themuseum.ca/" target="_blank">
+                            <img src="images/museumlogo.png" class="sponsor-logo-s">
+                        </a>
+                    </div>
+                    <div class="col-4" style="height: auto; margin-top: 10vh; margin-bottom: 15vh; text-align: center">
+                        <a href="https://uwaterloo.ca/science/" target="_blank">
+                            <img src="images/uwlogo.png" class="sponsor-logo-s">
+                        </a>
+                    </div>
+                    <div class="col-4" style="height: auto; margin-top: 10vh; margin-bottom: 15vh; text-align: center">
+                        <a href="https://www.kitchener.ca/en/index.aspx" target="_blank">
+                            <img src="images/kitchlogo.png" class="sponsor-logo-s">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
-        <div id="contact" class="end-block">
+        <!-- CONTACT US BLOCK ------------------------------------------------------>
+
+        <div class="end-block" id="contact">
+            <div class="container-fluid">
+            </div>
         </div>
 
+        <!-- FOOTER ---------------------------------------------------------------->
         <footer>
         </footer>
 
     </body>
 
     </div>
+
 </html>
