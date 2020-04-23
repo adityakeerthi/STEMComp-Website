@@ -1,0 +1,126 @@
+.html {
+    font-family:'Lucida Sans'
+}
+
+body {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    overflow-x: hidden;
+}
+
+div {
+    height: 100vh;
+    width: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.intro-block {
+    background-color: #b1d3ff;
+    background-image: url("images/1.png");
+}
+
+.middle {
+    background-color: #390072;
+
+}
+
+.header {
+    background-color: #390072;
+    background-image: url("images/2.png");
+    width: initial;
+    height: auto;
+}
+
+.mid-block-2 {
+    background-color: #390072;
+    background-image: url("images/3.png");
+}
+
+.end-block {
+    background-color: #b1d3ff;
+    background-image: url("images/4.png");
+}
+
+.nav-bar {
+    background-color: #b1d3ff;
+    background-size: cover;
+    height: 7vmax;
+    width: auto;
+    text-align: right;
+}
+
+.nav-button {
+    background-color: #d4e7ff;
+    color: #41364C;
+    text-align: center;
+    border: none;
+    padding: 0.7vw 1vw;
+    margin: 2vw 1vw 0vw 1vw;
+    font-size: 1vw;
+    /*just for now*/
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.login-button {
+    background-color: #BF93BC;
+    color: #41364C;
+    text-align: center;
+    border: none;
+    padding: 0.7vw 1vw;
+    margin: 2vw 1vw 0vw 1vw;
+    font-size: 1vw;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+button:hover {
+    animation-name: button-anim;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button-anim {
+    100% {
+        background-color: #6889ff;
+    }
+}
+
+#button-animation {
+    animation-name: button-anim;
+    animation-duration: 1s;
+}
+
+@media (min-width: 220vh) { /*accomodate window dragged wide (horizontally)*/
+    div {
+        height: 55vw;
+        width: auto;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }           
+}
+
+/* note for future: mobile view (or just small window) will need altered text and button display!!! */
+
+@media (min-height: 40vw) {
+    div {
+        width: 100vw;
+        height: 56vw;  /*play around with this, view might be too small but images return to exact ratio*/
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+}
+
+/* playing with media queries */
+
+/* at this point, make mobile display (later) */
+
+@media (max-width: 1070px) {
+
+}
