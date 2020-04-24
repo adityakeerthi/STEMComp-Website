@@ -7,7 +7,7 @@
 
 }
 
-.header {
+.header2 {
     background-color: #390072;
     background-image: url("images/2crop.png");
     width: initial;
@@ -62,7 +62,7 @@ h1 {
 }
 
 .sponsor-logo-s {
-    height: 8vw;
+    height: 12vw;
     width: auto;
 }
 
@@ -103,7 +103,7 @@ button {
 }
 
 .register-button {
-    background-color: #f6b26bff;
+    background-color: #f6b26b;
     color: #666666;
     font-size: 1.5vmax;
 }
