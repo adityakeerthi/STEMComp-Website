@@ -103,9 +103,15 @@ button {
 }
 
 .register-button {
-    background-color: #f6b26bff;
+    background-color: rgb(137, 212, 255);
     color: #666666;
     font-size: 1.5vmax;
+}
+
+.video-button {
+    background-color: #c9daf8ff;
+    color: #666666;
+    font-size: 2vmax;
 }
 
 button:hover {
