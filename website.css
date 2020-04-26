@@ -17,6 +17,9 @@
 .mid-block-2 {
     background-color: #390072;
     background-image: url("images/3.png");
+    background-size: contain;
+    height: auto;
+    background-position: bottom;
 }
 
 body {
@@ -46,6 +49,10 @@ h1 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
+.fa, .fa-instagram, .fa-facebook {
+    color: #390072;
+}
+
 .intro-block {
     background-color: #b1d3ff;
     background-image: url("images/1.png");
@@ -69,6 +76,9 @@ h1 {
 .mid-block-1 {
     background-color: #390072;
     background-image: url("images/2.png");
+    background-size: contain;
+    background-position: top;
+    height: auto;
 }
 
 .end-block {
@@ -106,6 +116,13 @@ button {
     background-color: #f6b26b;
     color: #666666;
     font-size: 1.5vmax;
+}
+
+.video-button {
+    background-color: #b1d3ff;
+    color: #666666;
+    font-size: 2vmax;
+    padding: 2vmin 3vmin;
 }
 
 button:hover {
