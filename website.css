@@ -14,14 +14,6 @@
     height: auto;
 }
 
-.mid-block-2 {
-    background-color: #390072;
-    background-image: url("images/3.png");
-    background-size: contain;
-    height: auto;
-    background-position: bottom;
-}
-
 body {
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
@@ -53,9 +45,8 @@ h1 {
     color: #390072;
 }
 
-.intro-block {
-    background-color: #b1d3ff;
-    background-image: url("images/1.png");
+.row {
+    height:auto;
 }
 
 .logo {
@@ -73,6 +64,11 @@ h1 {
     width: auto;
 }
 
+.intro-block {
+    background-color: #b1d3ff;
+    background-image: url("images/1.png");
+}
+
 .mid-block-1 {
     background-color: #390072;
     background-image: url("images/2.png");
@@ -81,12 +77,19 @@ h1 {
     height: auto;
 }
 
+.mid-block-2 {
+    background-color: #390072;
+    background-image: url("images/3.png");
+    background-size: contain;
+    height: auto;
+    background-position: bottom;
+}
+
 .end-block {
     background-color: #b1d3ff;
     background-image: url("images/4.png");
 }
 
-/* dELETE THIS LATER */
 .my-nav {
     background-color: #b1d3ff;
 }
@@ -140,6 +143,35 @@ button:hover {
     box-shadow: 0vmin 0vmin 2vmin 0.5vmin #7da4d4;
 }
 
+/* classes to select items with javascript */
+
+.criteria {
+    color:#b1d3ff;
+}
+
+.sixty-top {
+    margin-top: 60vmin;
+}
+
+.sixty-bot {
+    margin-bottom: 60vmin;
+}
+
+.fifteen-bot {
+    margin-bottom: 15vh;
+}
+
+.seven-bot {
+    margin-bottom: 7vh;
+}
+
+.twenty-top {
+    margin-top: 20vh;
+}
+
+
+/* animations and media queries */
+
 @keyframes button-anim {
     100% {
         background-color: #6889ff;
@@ -151,7 +183,9 @@ button:hover {
     animation-duration: 1s;
 }
 
-@media (min-width: 182vh) { /*accomodate window dragged wide (horizontally)*/
+/*accomodate backgrounds for horizontally wide displays*/
+
+@media (min-width: 182vh) { 
     div {
         height: 55vw;
         width: auto;
