@@ -213,6 +213,5 @@ button:hover {
 @media (min-width: 220vh) {
     html {
         overflow-x: hidden;
-        overflow-y: hidden;
     }
 }

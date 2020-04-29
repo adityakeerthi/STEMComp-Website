@@ -19,7 +19,6 @@ const prizetext = document.getElementById("prizetext");
 const title = document.getElementById("title");
 const logo = document.getElementById("logo");
 const thirteenLeft = document.getElementsByClassName("thirteen-left");
-const icons = document.getElementsByClassName("fa-2x");
 const contactText = document.getElementById("contact-text");
 const bigLogo = document.getElementsByClassName("sponsor-logo-l");
 const airboss = document.getElementById("airboss");
@@ -37,6 +36,11 @@ const sponsorsBtn = document.getElementById("sponsors-btn");
 const contactBtn = document.getElementById("contact-btn");
 const regBtn = document.getElementById("reg-btn");
 const logBtn = document.getElementById("log-btn");
+const p = document.getElementsByTagName("P");
+const registerButton = document.getElementById("register-button");
+const icon1 = document.getElementById("c1");
+const icon2 = document.getElementById("c2");
+const icon3 = document.getElementById("c3");
 
 
 // accomodate margins and sizes for narrow (mobile, tablet, split screen, etc) displays 
@@ -49,7 +53,10 @@ function styleChange(display) {
         instructions.classList.add("col-12");
         judging.classList.remove("col");
         judging.classList.remove("col-12");
-        judging.style.marginLeft = "11vmin";
+        instructions.style.marginLeft = "7vw";
+        instructions.style.marginRight = "7vw";
+        judging.style.marginLeft = "7vw";
+        judging.style.marginRight = "7vw";
         for(let i=0; i<criteria.length; i++){
             criteria[i].style.textAlign = "right";
         }
@@ -78,8 +85,6 @@ function styleChange(display) {
         grant.classList.add("col-12");
         epp.classList.remove("col-6");
         epp.classList.add("col-12");
-        prizetext.classList.remove("col-12");
-        prizetext.classList.add("col-10");
         logo.style.marginRight = "2vmax";
         for(let i=0; i<thirteenLeft.length; i++){
             thirteenLeft[i].style.marginLeft = "7vmin";
@@ -103,6 +108,12 @@ function styleChange(display) {
         contactBtn.style.fontSize = "1.2vmax";
         regBtn.style.fontSize = "1.2vmax";
         logBtn.style.fontSize = "1.2vmax";
+        icon1.classList.remove("fa-2x");
+        icon1.classList.add("fa-lg");
+        icon2.classList.remove("fa-2x");
+        icon2.classList.add("fa-lg");       
+        icon3.classList.remove("fa-2x");
+        icon3.classList.add("fa-lg"); 
     }
 
     else {
@@ -113,7 +124,10 @@ function styleChange(display) {
         instructions.classList.add("col-6");
         judging.classList.remove("col-12");
         judging.classList.add("col");
-        judging.style.marginLeft = "0vmin";
+        instructions.style.marginLeft = "4vw";
+        instructions.style.marginRight = "0vw";
+        judging.style.marginLeft = "0vw";
+        judging.style.marginRight = "4vw";        
         for(let i=0; i<criteria.length; i++){
             criteria[i].style.textAlign = "left";
         }
@@ -142,8 +156,6 @@ function styleChange(display) {
         grant.classList.add("col-6");
         epp.classList.remove("col-12");
         epp.classList.add("col-6");
-        prizetext.classList.remove("col-10");
-        prizetext.classList.add("col-12");
         logo.style.marginRight = "2vmin";
         for(let i=0; i<thirteenLeft.length; i++){
             thirteenLeft[i].style.marginLeft = "13vmin";
@@ -166,6 +178,12 @@ function styleChange(display) {
         contactBtn.style.fontSize = "1vmax";
         regBtn.style.fontSize = "1vmax";
         logBtn.style.fontSize = "1vmax";
+        icon1.classList.remove("fa-lg");
+        icon1.classList.add("fa-2x");
+        icon2.classList.remove("fa-lg");
+        icon2.classList.add("fa-2x");       
+        icon3.classList.remove("fa-lg");
+        icon3.classList.add("fa-2x"); 
     }
 }
 
@@ -178,15 +196,7 @@ function titleChange1(display) {
         for(let i=0; i<thirteenLeft.length; i++){
             thirteenLeft[i].style.marginLeft = "7vmin";
         }
-        for(let i=0; i<icons.length; i++){
-            icons[i].classList.remove("fa-2x");
-        }
         title.style.height = "85vh";
-    }
-    else {
-        for(let i=0; i<icons.length; i++){
-            icons[i].classList.add("fa-2x");
-        }
     }
 }
 
@@ -197,9 +207,6 @@ function titleChange2(display) {
         for(let i=0; i<thirteenLeft.length; i++){
             thirteenLeft[i].style.marginLeft = "5vmin";
         }
-        for(let i=0; i<icons.length; i++){
-            icons[i].classList.remove("fa-2x");
-        }
         contactText.style.paddingLeft = "20vw";
         introText.classList.remove("col-5");
         introText.classList.add("col-7");
@@ -207,13 +214,15 @@ function titleChange2(display) {
         subText.classList.add("col-9");
         titleBtn.classList.remove("col-4");
         titleBtn.classList.add("col-8");
+        for(let i=0; i<p.length; i++){
+            p[i].style.fontSize = "1.8vmax";
+        }
+        registerButton.style.fontSize = "1.8vmax";      
     }
     else {
+        logo.style.marginRight = "2vmax";
         for(let i=0; i<thirteenLeft.length; i++){
             thirteenLeft[i].style.marginLeft = "7vmin";
-        }
-        for(let i=0; i<icons.length; i++){
-            icons[i].classList.add("fa-2x");
         }
         contactText.style.paddingLeft = "40vw";
         introText.classList.remove("col-7");
@@ -222,6 +231,10 @@ function titleChange2(display) {
         subText.classList.add("col-7");
         titleBtn.classList.remove("col-8");
         titleBtn.classList.add("col-4");
+        for(let i=0; i<p.length; i++){
+            p[i].style.fontSize = "1.5vmax";
+        }
+        registerButton.style.fontSize = "1.5vmax";
     }
 }
 
@@ -237,8 +250,13 @@ function titleChange3(display) {
         contactBtn.style.fontSize = "2vmax";
         regBtn.style.fontSize = "2vmax";
         logBtn.style.fontSize = "2vmax";
+        for(let i=0; i<p.length; i++){
+            p[i].style.fontSize = "2vmax";
+        }
+        registerButton.style.fontSize = "2vmax";
     }
     else {
+        logo.style.marginRight = "2vmax";
         aboutBtn.style.fontSize = "1vmax";
         detailsBtn.style.fontSize = "1vmax";
         prizesBtn.style.fontSize = "1vmax";
@@ -246,6 +264,18 @@ function titleChange3(display) {
         contactBtn.style.fontSize = "1vmax";
         regBtn.style.fontSize = "1vmax";
         logBtn.style.fontSize = "1vmax";  
+    }
+}
+
+// wide screen function
+function adjustWide(display) {
+    if(display.matches) {
+        icon1.classList.remove("fa-2x");
+        icon1.classList.add("fa-lg");
+        icon2.classList.remove("fa-2x");
+        icon2.classList.add("fa-lg");       
+        icon3.classList.remove("fa-2x");
+        icon3.classList.add("fa-lg"); 
     }
 }
 
@@ -260,17 +290,23 @@ function firstDisplay(display) {
         titleChange2(mobileView);
         titleChange3(evenSmallerMobile);
     }
+    // check if display is wide
+    else {
+        adjustWide(wideView);
+    }
 }
 
 const smallView = window.matchMedia("(min-height: 65vw)");
 const smallerView = window.matchMedia("(min-height: 110vw)");
 const mobileView = window.matchMedia("(min-height: 120vw)");
 const evenSmallerMobile = window.matchMedia("(min-height: 140vw)");
+const wideView = window.matchMedia("(min-width: 220vh)");
 
 evenSmallerMobile.addListener(titleChange3);
 smallerView.addListener(titleChange1);
 mobileView.addListener(titleChange2);
 smallView.addListener(styleChange);
+wideView.addListener(adjustWide);
 
 // first display
 firstDisplay(smallView);
