@@ -45,6 +45,10 @@ h1 {
     color: #390072;
 }
 
+.fa-bars {
+    color: #666666;
+}
+
 .row {
     height:auto;
 }
@@ -104,15 +108,15 @@ button {
 .nav-button {
     background-color: #d4e7ff;
     color: #41364C;
-    margin: 0vw 1vw 0vw 1vw;
-    font-size: 1vw;
+    margin: 1vw 1vw 0vw 1vw;
+    font-size: 1vmax;
 }
 
 .login-button {
     background-color: #BF93BC;
     color: #41364C;
-    margin: 0vw 1vw 0vw 1vw;
-    font-size: 1vw;
+    margin: 1vw 1vw 0vw 1vw;
+    font-size: 1vmax;
 }
 
 .register-button {

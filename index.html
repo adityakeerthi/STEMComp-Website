@@ -7,6 +7,9 @@
         <title>STEMComp 2020</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     </head>
 
 <!-- will need to adjust sizes and margins for mobile view -->
@@ -16,37 +19,41 @@
     <body>
 
         <!-- NAVIGATION MENU ------------------------------------------------------->
-        <!-- needs to be made more responsive -->
-        <header>
-            <nav class="navbar navbar-expand-sm my-nav">
-                <a class="navbar-brand" href="#">
+        <header id="navigation-bar">
+            <nav class="navbar navbar-expand-sm my-nav" id="navigation-bar">
+                <a class="navbar-brand" href="#" style="margin: 1vmin 1vmin">
                     <img src="images/logo.png" alt="STEMComp 2020" style="height:5vmax; width:5vmax; margin-right: 2vmax">
                 </a>
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                    <button id="about-btn" class="nav-button">About</button>
-                  </li>
-                  <li class="nav-item">
-                    <button id="deets-btn" class="nav-button">Competition Details</button>
-                  </li>
-                  <li class="nav-item">
-                    <button id="prizes-btn" class="nav-button">Prizes</button>
-                  </li>
-                  <li class="nav-item">
-                    <button id="sponsors-btn" class="nav-button">Our Sponsors</button>
-                  </li>
-                  <li class="nav-item">
-                    <button id="contact-btn" class="nav-button">Contact Us</button>
-                  </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <button id="reg-btn" class="login-button">Register</button>
-                    </li>
-                    <li class="nav-item">
-                        <button id="log-btn" class="login-button">Log in</button>
-                    </li>     
-                </ul>          
+                <button class="navbar-toggler my-auto" style="background-color:#b1d3ff" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="fas fa-bars fa-2x"></span>
+                </button>
+                <ul class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav mr-auto my-auto">
+                        <li class="nav-item">
+                            <a href="#video"><button id="about-btn" class="nav-button">About</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contest"><button id="deets-btn" class="nav-button">Competition Details</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#prizes"><button id="prizes-btn" class="nav-button">Prizes</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sponsors"><button id="sponsors-btn" class="nav-button">Our Sponsors</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact"><button id="contact-btn" class="nav-button">Contact Us</button></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto my-auto">
+                        <li class="nav-item">
+                            <a href="#"><button id="reg-btn" class="login-button">Register</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"><button id="log-btn" class="login-button">Log in</button></a>
+                        </li>
+                    </ul>        
+                </ul>      
             </nav>
         </header>
 
@@ -80,7 +87,7 @@
 
             <div class="row">
                 <div class="col-4 thirteen-left" id="title-btn" style="margin-left: 13vmin; height:auto">
-                    <button class="register-button">Register to Compete</button>
+                    <a href="#"><button class="register-button">Register to Compete</button></a>
                 </div>
             </div>
 
@@ -90,12 +97,12 @@
 
         <!-- VIDEO BLOCK ------------------------------------------------------------>
 
-        <div class="mid-block-1" id="video">
+        <div class="mid-block-1">
             <div class="container-fluid" style="height:auto">
 
                 <div class="row">
-                    <div class="col-12 sixty-top" style="height:auto; margin-top: 60vmin; text-align: center">
-                        <button class="video-button"> Here's a quick video from our organizers! </button>
+                    <div class="col-12 sixty-top" id="video" style="height:auto; margin-top: 60vmin; text-align: center">
+                        <a href="https://www.youtube.com/watch?v=yq5vW43cl98" target="_blank"><button class="video-button"> Here's a quick video from our organizers! </button></a>
                     </div>
 
                     <div class="col-12 fifteen-bot" style="height:auto; margin-top: 12vh; text-align: center; margin-bottom:15vh">
@@ -125,7 +132,7 @@
                 <!-- YOUR CHALLENGE --------------------------------------------------------------------->
 
                 <div class="row">
-                    <div class="col-11 seven-bot" style="height:auto; text-align:left; margin-bottom:7vh; margin-left:7vmin">
+                    <div id="contest" class="col-11 seven-bot" style="height:auto; text-align:left; margin-bottom:7vh; margin-left:7vmin">
                         <h1 style="font-size: 4.5vmax; color: white">Your Challenge</h1>
                     </div>
                 </div>

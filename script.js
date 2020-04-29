@@ -29,6 +29,14 @@ const mail = document.getElementById("mail");
 const subText = document.getElementById("sub-text");
 const titleBtn = document.getElementById("title-btn");
 const logopic = document.getElementById("logopic");
+const navigationBar = document.getElementById("navigation-bar");
+const aboutBtn = document.getElementById("about-btn");
+const detailsBtn = document.getElementById("deets-btn");
+const prizesBtn = document.getElementById("prizes-btn");
+const sponsorsBtn = document.getElementById("sponsors-btn");
+const contactBtn = document.getElementById("contact-btn");
+const regBtn = document.getElementById("reg-btn");
+const logBtn = document.getElementById("log-btn");
 
 
 // accomodate margins and sizes for narrow (mobile, tablet, split screen, etc) displays 
@@ -88,6 +96,13 @@ function styleChange(display) {
         ig.classList.remove("col-11");
         ig.classList.add("col-10");
         title.style.height = "90vh";
+        aboutBtn.style.fontSize = "1.2vmax";
+        detailsBtn.style.fontSize = "1.2vmax";
+        prizesBtn.style.fontSize = "1.2vmax";
+        sponsorsBtn.style.fontSize = "1.2vmax";
+        contactBtn.style.fontSize = "1.2vmax";
+        regBtn.style.fontSize = "1.2vmax";
+        logBtn.style.fontSize = "1.2vmax";
     }
 
     else {
@@ -144,6 +159,13 @@ function styleChange(display) {
         fb.classList.add("col-11");
         ig.classList.remove("col-10");
         ig.classList.add("col-11");
+        aboutBtn.style.fontSize = "1vmax";
+        detailsBtn.style.fontSize = "1vmax";
+        prizesBtn.style.fontSize = "1vmax";
+        sponsorsBtn.style.fontSize = "1vmax";
+        contactBtn.style.fontSize = "1vmax";
+        regBtn.style.fontSize = "1vmax";
+        logBtn.style.fontSize = "1vmax";
     }
 }
 
@@ -208,13 +230,29 @@ function titleChange3(display) {
     if(display.matches) {
         logopic.style.marginRight = "5vmin";
         logo.style.marginRight = "12vmin";
+        aboutBtn.style.fontSize = "2vmax";
+        detailsBtn.style.fontSize = "2vmax";
+        prizesBtn.style.fontSize = "2vmax";
+        sponsorsBtn.style.fontSize = "2vmax";
+        contactBtn.style.fontSize = "2vmax";
+        regBtn.style.fontSize = "2vmax";
+        logBtn.style.fontSize = "2vmax";
+    }
+    else {
+        aboutBtn.style.fontSize = "1vmax";
+        detailsBtn.style.fontSize = "1vmax";
+        prizesBtn.style.fontSize = "1vmax";
+        sponsorsBtn.style.fontSize = "1vmax";
+        contactBtn.style.fontSize = "1vmax";
+        regBtn.style.fontSize = "1vmax";
+        logBtn.style.fontSize = "1vmax";  
     }
 }
 
 // function that gets called at the beginning to set up features based on initial view
-
 function firstDisplay(display) {
 
+    // check if display is narrower than desktop first
     if(display.matches) {
         // call functions from largest to smallest display so mobile has priority on first page load
         styleChange(smallView);
@@ -222,54 +260,6 @@ function firstDisplay(display) {
         titleChange2(mobileView);
         titleChange3(evenSmallerMobile);
     }
-
-    else { // set everything to desktop view
-        title.style.height = "120vh";
-        introText.classList.add("col-3");
-        instructions.classList.add("col-6");
-        judging.classList.add("col");
-        judging.style.marginLeft = "0vmin";
-        for(let i=0; i<criteria.length; i++){
-            criteria[i].style.textAlign = "left";
-        }
-        firstText.style.fontSize = "3vmax";
-        secondText.style.fontSize = "2vmax";
-        thirdText.style.fontSize = "1.5vmax";    
-        firstVal.style.fontSize = "13vmax";
-        secondVal.style.fontSize = "9vmax";
-        thirdVal.style.fontSize = "7vmax";
-        for(let i=0; i<sixtyTop.length; i++){
-            sixtyTop[i].style.marginTop ="60vmin";
-        }
-        for(let i=0; i<sixtyBot.length; i++){
-            sixtyBot[i].style.marginBottom ="60vmin";
-        }
-        for(let i=0; i<fifteenBot.length; i++){
-            fifteenBot[i].style.marginBottom ="15vh";
-        }
-        for(let i=0; i<sevenBot.length; i++){
-            sevenBot[i].style.marginBottom ="7vh";
-        }
-        for(let i=0; i<twentyTop.length; i++){
-            twentyTop[i].style.marginTop ="20vh";
-        }
-        grant.classList.add("col-6");
-        epp.classList.add("col-6");
-        prizetext.classList.add("col-12");
-        logo.style.marginRight = "2vmin";
-        for(let i=0; i<thirteenLeft.length; i++){
-            thirteenLeft[i].style.marginLeft = "13vmin";
-        }
-        for(let i=0; i<bigLogo.length; i++){
-            bigLogo[i].style.height = "15vw";
-        }
-        airboss.style.height = "20vw";
-        epp.style.marginTop = "15vh";
-        mail.classList.add("col-11");
-        fb.classList.add("col-11");
-        ig.classList.add("col-11");
-    }
-
 }
 
 const smallView = window.matchMedia("(min-height: 65vw)");
