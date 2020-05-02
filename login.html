@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="website.css">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>STEMComp 2020</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<div class="fluid-container">
+
+    <body style="background-color: #390072;">
+
+
+        <!-- NAVIGATION MENU ------------------------------------------------------->
+        <header id="navigation-bar">
+            <nav class="navbar navbar-expand-sm my-nav" id="navigation-bar">
+                <a class="navbar-brand" href="#" style="margin: 1vmin 1vmin">
+                    <img src="images/logo.png" alt="STEMComp 2020"
+                        style="height:10vmax; width:10vmax; margin-right: 2vmax">
+                </a>
+                <h1> Login Menu </h1>
+                <button class="navbar-toggler my-auto" style="background-color:#b1d3ff" type="button"
+                    data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="fas fa-bars"></span>
+                </button>
+                <ul class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto my-auto">
+                        <li class="nav-item">
+                            <a href="index.html"><button id="about-btn" class="home-button">Home</button></a>
+                        </li>
+                    </ul>
+                </ul>
+            </nav>
+        </header>
+
+<!-- FORM BLOCK ----------------------------------------------------------->
+
+<div class="register-block" id="title">
+
+    <div class="container-fluid" height="inherit">
+
+        <div class="row">
+            <div class="col-12 sixty-top" style="height:auto; margin-top: 42vmin;"></div>
+            <form id="signup-form" class="signup-form">
+
+                <h5 class="col-12 login-heading" style = "height: auto; text-align: center;">Login:</h5>
+
+                <input type="text" id="first-name" size="30" required /><br>
+                <label for="first-name">Email</label><br>
+
+                <input type="text" id="last-name" size="30" required /><br>
+                <label for="last-name">Password</label><br>
+
+                <button class="btn yellow darken-2 z-depth-0">Sign in</button><br><br>
+                Or if you're new to STEMComp,
+                <a href = "register.html">click here to register!</a><br><br><br>
+            </form>
+        </div>
+    </div>
+</div>
+    </body>
+</div>
+
+</html>

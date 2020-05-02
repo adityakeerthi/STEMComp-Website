@@ -47,6 +47,17 @@ p {
     width: auto;
 }
 
+.login-heading {
+    font-size: 2.5vmax;
+    padding: 1.2vmax;
+    background-color: #b1d3ff;
+    color: white;
+    margin-bottom: 2vmax;
+    margin-top: 2vmax;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+
 h6 {
     font-size: 4.5vmax;
     color: white;
@@ -69,7 +80,10 @@ h1 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     font-size: 1.3vmax;
     color: white;
-    margin: 5vmax;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 4vmax;
 }
 
 .fa, .fa-instagram, .fa-facebook {
