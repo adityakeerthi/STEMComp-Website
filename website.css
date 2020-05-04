@@ -129,7 +129,7 @@ h1 {
 .register-block {
     background-color: #390072;
     background-image: url("images/2.png");
-    background-size: contain;
+    background-size: fill;
     background-position: top;
     height: auto;
 }

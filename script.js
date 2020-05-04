@@ -133,10 +133,10 @@ function styleChange(display) {
         }
         firstText.style.fontSize = "3vmax";
         secondText.style.fontSize = "2vmax";
-        thirdText.style.fontSize = "1.5vmax";    
+        thirdText.style.fontSize = "2vmax";    
         firstVal.style.fontSize = "13vmax";
         secondVal.style.fontSize = "9vmax";
-        thirdVal.style.fontSize = "7vmax";
+        thirdVal.style.fontSize = "9vmax";
         for(let i=0; i<sixtyTop.length; i++){
             sixtyTop[i].style.marginTop ="60vmin";
         }
