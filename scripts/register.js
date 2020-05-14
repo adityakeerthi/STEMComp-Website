@@ -161,7 +161,7 @@ auth.onAuthStateChanged(user => {
         // window.location.href = "./index.html";
         if (signupForm) {
             setTimeout(() => {
-                window.location.href= "./index.html"
+                window.location.href= "./dashboard.html"
             }, 1000)           
             
         }
@@ -171,7 +171,6 @@ auth.onAuthStateChanged(user => {
         if (signupForm) {
             signupForm.addEventListener('submit', (e) => {
                 e.preventDefault();
-                console.log(signupForm['grade']);
                 // get user info
                 const email = signupForm['signup-email'].value;
                 const password = signupForm['signup-password'].value;
@@ -190,7 +189,7 @@ auth.onAuthStateChanged(user => {
                         school: signupForm['school'].value,
                         submitted: false,
                         votescasted: []
-                    }).then(() => {window.location.href = "./index.html"});
+                    }).then(() => {window.location.href = "./dashboard.html"});
 
                 }).then(() => {
                     signupForm.reset();
@@ -233,3 +232,9 @@ auth.onAuthStateChanged(user => {
     }
         
 });
+
+// ANIMATE ON SCROLL  [ THIS IS THE ONLY ANIMATION I'M EVER GOING TO DO LOL ~ ADITYA]
+const registerContent = document.getElementById('register-content');
+if (registerContent) {
+    $("html, body").delay(0).animate({scrollTop: $('#signup-form').offset().top }, 2000);
+}

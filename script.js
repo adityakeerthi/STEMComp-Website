@@ -42,6 +42,26 @@ const icon1 = document.getElementById("c1");
 const icon2 = document.getElementById("c2");
 const icon3 = document.getElementById("c3");
 
+// ANIMATE ON SCROLL  [ THIS IS THE ONLY ANIMATION I'M EVER GOING TO DO LOL ~ ADITYA]
+function toAbout() {
+    $("html, body").delay(0).animate({scrollTop: $('#video').offset().top }, 2000);
+}
+
+function toContest() {
+    $("html, body").delay(0).animate({scrollTop: $('#contest').offset().top }, 2000);
+}
+
+function toPrizes() {
+    $("html, body").delay(0).animate({scrollTop: $('#prizes').offset().top }, 2000);
+}
+
+function toSponsors() {
+    $("html, body").delay(0).animate({scrollTop: $('#sponsors').offset().top }, 2000);
+}
+
+function toContact() {
+    $("html, body").delay(0).animate({scrollTop: $('#contact').offset().top }, 2000);
+}
 
 // accomodate margins and sizes for narrow (mobile, tablet, split screen, etc) displays 
 function styleChange(display) {

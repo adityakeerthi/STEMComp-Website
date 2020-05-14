@@ -141,7 +141,7 @@ auth.onAuthStateChanged(user => {
         }
 
         if (loginContent) {
-            window.location.href = "./index.html";
+            window.location.href = "./dashboard.html";
             loginContent.innerHTML = `
             <div class="register-block" id="title">
                 <div class="container-fluid" height="inherit">
@@ -206,3 +206,9 @@ auth.onAuthStateChanged(user => {
 
 
 })
+
+// ANIMATE ON SCROLL  [ THIS IS THE ONLY ANIMATION I'M EVER GOING TO DO LOL ~ ADITYA]
+const loginContent = document.getElementById('login-content');
+if (loginContent) {
+    $("html, body").delay(0).animate({scrollTop: $('#login-form').offset().top }, 2000);
+}
