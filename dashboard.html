@@ -57,55 +57,32 @@
         
                         <h5 class="col-12 login-heading" id="project-submission" style="height: auto; text-align: center;">Project Submission:</h5>
                         
-                        <section class="dashboard-row" id="project-submission-content">
-                            <section class="dashboard-column-1">
-                                <form id="projectSubmissionForm">
+                        <section class="dashboard-row-submission" id="project-submission-content">
 
-                                    <input type="text" id="project-title" size="30" required /> <br />
-                                    <label for="project-title"> Project Title </label> <br />
-
-                                    <textarea type="password" id="project-description" size="30" required> </textarea> <br />
-                                    <label for="project-description"> Project Description </label> <br />
-                
-                                    <select id="category">
-                                        <option value= "life-sciences"> Life Sciences </option>
-                                        <option value= "mathematical-sciences-and-technology"> Mathematical Sciences & Technology </option>
-                                    </select> <br />
-                                    <label for="category"> Category </label> <br />
-
-                                    <input type="url" id="youtube-url" required /> <br/>
-                                    <label for="youtube-url">Youtube URL</label> <br />
-
-                                    <button class="btn yellow darken-2 z-depth-0"> Submit </button> <br /> <br />
-     
-                                </form>
-                            </section>
-                            
-                            <section class="dashboard-column-1" id="youtube-video-information">                               
-                            </section>
                         </section>
     
                         <h5 class="col-12 login-heading" id="judging-panel" style="height: auto; text-align: center;">Judging Panel:</h5>
     
-                        <section class="dashboard-row">
-                            <section class="dashboard-column-1">
-                                <form id="projectSubmission">
-                                    <input type="text" id="login-email" size="30" required /><br>
-                                    <label for="login-email">Email</label><br>
-                
-                                    <input type="password" id="login-password" size="30" required /><br>
-                                    <label for="login-password">Password</label><br>
-                
-                                    <button class="btn yellow darken-2 z-depth-0">Sign in</button><br><br>
-     
-                                </form>
+                        <section class="dashboard-row judging-panel-content ">                  
+                            <section class="dashboard-row judging-panel-submission-1">
+                                <section id="judging-content-1-1" class="dashboard-column-1">
+
+                                </section>
+                                <section id="judging-content-1-2" class="dashboard-column-1">
+
+                                </section>
                             </section>
-                            <section class="dashboard-column">
-                                <iframe id="userYoutubeVideo" src="https://www.youtube.com/embed/9UZK-yNr_OA" width="100" height="100" frameborder="0"></iframe>
+
+                            <section class="dashboard-row judging-panel-submission-2">
+                                <section id="judging-content-2-1" class="dashboard-column-1 ">
+
+                                </section>
+                                <section id="judging-content-2-2" class="dashboard-column-1">
+                                    
+                                </section>
                             </section>
                         </section>
-
-
+                        
                     </div>
                 </div>
             </div>
@@ -117,7 +94,8 @@
     <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
 
     <script src="./scripts/api.js"></script>
-    <script src="./scripts/dashboard.js"></script>
+    <script src="./scripts/submission.js"></script>
+    <script src="./scripts/judging.js"></script>
 
     </body>
 

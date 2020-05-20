@@ -188,7 +188,8 @@ auth.onAuthStateChanged(user => {
                         grade: signupForm['grade'].value,
                         school: signupForm['school'].value,
                         submitted: false,
-                        votescasted: []
+                        assigned: [],
+                        votes: {}
                     }).then(() => {window.location.href = "./dashboard.html"});
 
                 }).then(() => {
