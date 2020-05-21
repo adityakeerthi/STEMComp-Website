@@ -146,7 +146,7 @@ auth.onAuthStateChanged(user => {
 
                             db.collection('submissions').doc(assignedList[0]).get().then(doc_one => {
                                 judgeContent1_2.innerHTML = `
-                                <h2> Current Voting Details for  </h2> 
+                                <h2> The Project you are judging...  </h2> 
                                 <a ><button id="about-btn" class="home-button"> <b>Title:</b> ${doc_one.data().title} </button></a> <br /> <br />
                                 <a ><button id="about-btn" class="home-button"> <b>Description:</b> ${doc_one.data().description} </button></a> <br /> <br />
                                 <a ><button id="about-btn" class="home-button"> <b>Category:</b> ${doc_one.data().category} </button></a> <br /> <br />
@@ -157,7 +157,7 @@ auth.onAuthStateChanged(user => {
 
                             db.collection('submissions').doc(assignedList[1]).get().then(doc_one => {
                                 judgeContent2_2.innerHTML = `
-                                <h2> Current Voting Details for  </h2> 
+                                <h2> The Project you are judging...  </h2> 
                                 <a ><button id="about-btn" class="home-button"> <b>Title:</b> ${doc_one.data().title} </button></a> <br /> <br />
                                 <a ><button id="about-btn" class="home-button"> <b>Description:</b> ${doc_one.data().description} </button></a> <br /> <br />
                                 <a ><button id="about-btn" class="home-button"> <b>Category:</b> ${doc_one.data().category} </button></a> <br /> <br />
@@ -217,7 +217,8 @@ auth.onAuthStateChanged(user => {
                                                 votes: userVotes
 
                                             }).then(() => {
-                                                // window.location.reload();
+                                                judgingForm1.reset();
+                                                window.location.reload();
                                             })
 
                                         })
@@ -269,7 +270,8 @@ auth.onAuthStateChanged(user => {
                                                 votes: userVotes
 
                                             }).then(() => {
-                                                // window.location.reload();
+                                                judgingForm2.reset();
+                                                window.location.reload();
                                             })
 
                                         })
