@@ -9,7 +9,7 @@
 
 .header2 {
     background-color: #390072;
-    background-image: url("images/2crop.png");
+    background-image: url("../assets/images/2crop.png");
     width: initial;
     height: auto;
 }
@@ -252,12 +252,12 @@ input {
 
 .intro-block {
     background-color: #b1d3ff;
-    background-image: url("images/1.png");
+    background-image: url("../assets/images/1.png");
 }
 
 .mid-block-1 {
     background-color: #390072;
-    background-image: url("images/2.png");
+    background-image: url("../assets/images/2.png");
     background-size: contain;
     background-position: top;
     height: auto;
@@ -265,7 +265,7 @@ input {
 
 .register-block {
     background-color: #390072;
-    background-image: url("images/2.png");
+    background-image: url("../assets/images/2.png");
     background-size: fill;
     background-position: top;
     height: auto;
@@ -273,7 +273,7 @@ input {
 
 .mid-block-2 {
     background-color: #390072;
-    background-image: url("images/3.png");
+    background-image: url("../assets/images/3.png");
     background-size: contain;
     height: auto;
     background-position: bottom;
@@ -281,7 +281,7 @@ input {
 
 .end-block {
     background-color: #b1d3ff;
-    background-image: url("images/4.png");
+    background-image: url("../assets/images/4.png");
 }
 
 .my-nav {

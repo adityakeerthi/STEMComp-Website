@@ -298,7 +298,8 @@ auth.onAuthStateChanged(user => {
         }
 
     } else {
-        window.location.href = "./index.html";
+        // window.location.href = "./index.html";
+        console.log("logged out")
     }
 
 

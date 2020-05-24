@@ -8,7 +8,7 @@ var firebaseConfig = {
     storageBucket: "stemcomp-e7b1b.appspot.com",
     messagingSenderId: "436730235957",
     appId: "1:436730235957:web:587c8bee3d1ac17e36b57c"
-  };
+};
   
 
 
@@ -19,13 +19,19 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const db = firebase.firestore();
 
-// auth.onAuthStateChanged(user => {
-//   if(user) {
-//     // console.log(user.email);
-//     console.log("LOGGED IN")
+// const tokenId = auth.user.getIdToken();
+
+// console.log(tokenId);
+
+auth.onAuthStateChanged(user => {
+  if(user) {
+    // console.log(user.email);
+    console.log(user);
+    console.log(user.refreshToken);
+    console.log("LOGGED IN")
     
-//   } else {
-//     console.log("NOT LOGGED IN")
-//     // something
-//   }
-// })
+  } else {
+    console.log("NOT LOGGED IN")
+    // something
+  }
+})

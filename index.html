@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="./styles/website.css">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width initial-scale=1">
@@ -45,14 +45,9 @@
                             <a onclick="toContact()"><button id="contact-btn" class="nav-button">Contact Us</button></a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav ml-auto my-auto">
-                        <li class="nav-item">
-                            <a onclick="register.html"><button id="reg-btn" class="login-button">Register</button></a>
-                        </li>
-                        <li class="nav-item">
-                            <a onclick="login.html"><button id="log-btn" class="login-button">Log in</button></a>
-                        </li>
-                    </ul>        
+                    <ul class="navbar-nav ml-auto my-auto" id="index-navbar">
+
+                    </ul>       
                 </ul>      
             </nav>
         </header>
@@ -87,13 +82,13 @@
 
             <div class="row">
                 <div class="col-4 thirteen-left" id="title-btn" style="margin-left: 13vmin; height:auto">
-                    <a href="register.html"><button id="register-button" class="register-button">Register to Compete</button></a>
+                    <a href="./pages/register.html"><button id="register-button" class="register-button">Register to Compete</button></a>
                 </div>
             </div>
 
         </div>
 
-        </div>
+        </div>  
 
         <!-- VIDEO BLOCK ------------------------------------------------------------>
 
@@ -107,7 +102,7 @@
 
                     <div class="col-12 fifteen-bot" style="height:auto; margin-top: 12vh; text-align: center; margin-bottom:15vh">
                         <video width="80%" height=auto controls>
-                            <source src="mike-video.mp4" type="video/mp4">
+                            <source src="./assets/mike-video.mp4" type="video/mp4">
                         </video>
 
                     </div>
@@ -207,7 +202,7 @@
                                 <p style="color:#b1d3ff; font-size:2vmax">3</p>
                             </div>
                             <div class="col my-auto" style="height:auto">
-                                <p>Log in and submit your video by <b style="color:#f6b26b">June 12</b>.</p>
+                                <p>Log in and submit your video by <b style="color:#f6b26b">July 1, 11:59 p.m.</b></p>
                             </div>
                         </div>
                         <div class="row">
@@ -215,7 +210,7 @@
                                 <p style="color:#b1d3ff; font-size:2vmax">4</p>
                             </div>
                             <div class="col-10 my-auto" style="height:auto">
-                                <p>After the video submission due date, you'll be given two other videos to peer evaluate. Log into your account, watch both videos, and rate them carefully for each judging criteria. Peer judging must be completed by <b style="color:#f6b26b">June 17</b>.</p>
+                                <p>After the video submission due date, you'll be given two other videos to peer evaluate. Log into your account, watch both videos, and rate them carefully for each judging criteria. Peer judging must be completed by <b style="color:#f6b26b">July 3, 11:59 p.m.</b></p>
                             </div>
                         </div>
                         <div class="row">
@@ -223,7 +218,7 @@
                                 <p style="color:#b1d3ff; font-size:2vmax">5</p>
                             </div>
                             <div class="col-10 my-auto" style="height:auto">
-                                <p>All video submissions will be posted once the competition is over. Winners will be announced on <b style="color:#f6b26b">June (TBD)</b>.</p>
+                                <p>All video submissions will be posted once the competition is over. Winners will be announced in <b style="color:#f6b26b">mid-July.</b></p>
                             </div>
                         </div>
 
@@ -316,7 +311,7 @@
                 <div class="row">
                     <div class="col-12" id="prizetext" style="height:auto; text-align:center">
                         <h1 style="font-size: 4.5vmax; margin-bottom:5vh; text-align: center; color: white">Additional $50 Prizes</h1>
-                        <p class="seven-bot" style="margin-top:3vh; margin-left:5vw; margin-right:5vw; text-align: center">Our additional prizes are each worth $50 in prepaid Visa cards. <b style="color:#f6b26b">Two of each prizes are available,</b> one for juniors (grades 9-10) and one for seniors (grades 11-12).</p>
+                        <p class="seven-bot" style="margin-top:3vh; margin-left:5vw; margin-right:5vw; text-align: center">Our special prizes are each worth $50. <b style="color:#f6b26b">Two of each prizes are available,</b> one for juniors (grades 9-10) and one for seniors (grades 11-12).</p>
                     </div>
                 </div>
 
@@ -461,7 +456,7 @@
         <footer>
         </footer>
         
-    <script src="script.js"></script>
+    <script src="./scripts/script.js"></script>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
