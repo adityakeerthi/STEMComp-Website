@@ -50,7 +50,7 @@ p {
 .login-heading {
     font-size: 2.5vmax;
     padding: 1.2vmax;
-    background-color: #b1d3ff;
+    background-color: #390072;
     color: white;
     margin-bottom: 2vmax;
     margin-top: 2vmax;
@@ -59,7 +59,7 @@ p {
 
 
 h6 {
-    font-size: 4.5vmax;
+    font-size: 2.5vmin;
     color: white;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     background-color: crimson;
@@ -127,11 +127,8 @@ h1 {
 }
 
 .register-block {
-    background-color: #390072;
-    background-image: url("images/2.png");
-    background-size: fill;
-    background-position: top;
-    height: auto;
+    background-color: #b1d3ff;
+    height:auto;
 }
 
 .mid-block-2 {
