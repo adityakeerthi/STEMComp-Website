@@ -1,0 +1,794 @@
+.html {
+    font-family:'Lucida Sans'
+}
+
+.middle {
+    background-color: #390072;
+
+}
+
+.header2 {
+    background-color: #390072;
+    background-image: url("../images/2crop.png");
+    width: initial;
+    height: auto;
+}
+
+body {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    overflow-x: hidden;
+}
+
+div {
+    height: 100vh;
+    width: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+p {
+    font-size: 1.5vmax;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+
+
+.form-heading {
+    font-size: 2.5vmax;
+    padding: 1.2vmax;
+    text-align: center;
+    background-color: #b1d3ff;
+    color: white;
+    margin-bottom: 2vmax;
+    margin-top: 2vmax;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    width: auto;
+}
+
+.login-heading {
+    font-size: 2.5vmax;
+    padding: 1.2vmax;
+    background-color: #390072;
+    color: white;
+    margin-bottom: 2vmax;
+    margin-top: 2vmax;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+
+h6 {
+    font-size: 2.5vmin;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    background-color: crimson;
+    padding: 0.5vmax;
+}
+
+label {
+    /* padding-bottom: 1vmax; */
+    color: white;
+}
+
+iframe {
+    border: none;
+    height: 60vmin;
+    width: 100%;
+    padding-left: 10vmin;
+    padding-right: 10vmin;
+}
+
+h1 {
+    font-size: 4.5vmax;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.signup-form {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 1.3vmax;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 4vmax;
+}
+
+.fa, .fa-instagram, .fa-facebook {
+    color: #390072;
+}
+
+.fa-bars {
+    color: #666666;
+}
+
+.row {
+    height:auto;
+}
+
+.logo {
+    height: 15vmax;
+    width: 15vmax;
+}
+
+.sponsor-logo-l {
+    height: 15vw;
+    width: auto;
+}
+
+.sponsor-logo-s {
+    height: 12vw;
+    width: auto;
+}
+
+.intro-block {
+    background-color: #b1d3ff;
+    background-image: url("../images/1.png");
+}
+
+.mid-block-1 {
+    background-color: #390072;
+    background-image: url("../images/2.png");
+    background-size: contain;
+    background-position: top;
+    height: auto;
+}
+
+/* .register-block {
+    background-color: #232323;
+    background-image: url("../images/2.png");
+    background-size: fill;
+    background-position: top;
+    height: auto;
+    min-height: 20px;
+} */
+
+.register-block {
+    /* background-color: #b1d3ff; */
+    background-image: linear-gradient(#b1d3ff, #390072);
+    /* background-image: linear-gradient(-45deg, #fff, #E73C7E, #23A6D5, 23D5AB ); */
+    background-size: 100% 100%;
+    position: relative;
+    height:auto;
+    /* animation: change 5s ease-in-out infinite; */
+}
+
+
+
+@keyframes change { 
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.mid-block-2 {
+    background-color: #390072;
+    background-image: url("../images/3.png");
+    background-size: contain;
+    height: auto;
+    background-position: bottom;
+}
+
+.end-block {
+    background-color: #b1d3ff;
+    background-image: url("../images/4.png");
+}
+
+.my-nav {
+    background-color: #b1d3ff;
+}
+
+button {
+    text-align: center;
+    border: none;
+    padding: 0.7vw 1vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.nav-button {
+    background-color: #d4e7ff;
+    color: #41364C;
+    margin: 1vw 1vw 0vw 1vw;
+    font-size: 1vmax;
+}
+
+.home-button {
+    background-color: #BF93BC;
+    color: #41364C;
+    margin: 1vw 2vw 0vw 1vw;
+    font-size: 1.5vmax;
+    padding-left: 1vmax;
+    padding-right: 1vmax;
+}
+
+.login-button {
+    background-color: #BF93BC;
+    color: #41364C;
+    margin: 1vw 1vw 0vw 1vw;
+    font-size: 1vmax;
+}
+
+.register-button {
+    background-color: #f6b26b;
+    color: #666666;
+    font-size: 1.5vmax;
+    padding: 2vmin 3vmin;
+}
+
+.register-wrapper {
+    /* height:auto; */
+    margin-top: 60vmin; 
+    background-image: linear-gradient(#390072, #232323);
+}
+
+.login-wrapper {
+    /* height:auto; */
+    margin-top: 60vmin; 
+    background-image: url('../images/3.png');
+    /* background-image: linear-gradient(#390072, #232323); */
+}
+
+.signupcolumn {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.signuprow:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+#toggle-teammate {
+    width: 100%;
+    font-size: 3vh;
+}
+
+#secondary {
+    display: none;
+}
+
+.video-button {
+    background-color: #b1d3ff;
+    color: #666666;
+    font-size: 2vmax;
+    padding: 2vmin 3vmin;
+}
+
+button:hover {
+    animation-name: button-anim;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.sponsor-logo-l:hover {
+    box-shadow: 0vmin 0vmin 2vmin 0.5vmin #7da4d4;
+}
+
+.sponsor-logo-s:hover {
+    box-shadow: 0vmin 0vmin 2vmin 0.5vmin #7da4d4;
+}
+
+/* classes to select items with javascript */
+
+.criteria {
+    color:#b1d3ff;
+}
+
+.sixty-top {
+    margin-top: 60vmin;
+}
+
+.sixty-bot {
+    margin-bottom: 60vmin;
+}
+
+.fifteen-bot {
+    margin-bottom: 15vh;
+}
+
+.seven-bot {
+    margin-bottom: 7vh;
+}
+
+.twenty-top {
+    margin-top: 20vh;
+}
+
+.thirteen-left {
+    margin-left: 13vmin;
+}
+
+
+/* animations and media queries */
+
+@keyframes button-anim {
+    100% {
+        background-color: #6889ff;
+    }
+}
+
+#button-animation {
+    animation-name: button-anim;
+    animation-duration: 1s;
+}
+
+/*accomodate backgrounds for horizontally wide displays*/
+@media (min-width: 182vh) { 
+    div {
+        height: 55vw;
+        width: auto;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }           
+}
+
+/* fixes overflow issue on mobile view */
+@media (min-height: 65vw) {
+    html {
+        overflow-x: hidden;
+    }
+}
+@media (min-width: 220vh) {
+    html {
+        overflow-x: hidden;
+    }
+}
+
+.dashboard-wrapper {
+    height:auto;
+    margin-top: 60vmin; 
+    background-image: linear-gradient(#390072, #390072);
+    text-align: center;
+}
+
+.dashboard-row-project-submission:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.dashboard-row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 12vh;
+}
+
+.dashboard-column {
+    float: left;
+    width: 50%;
+}
+
+.judging-panel-1 {
+    background-color: #F08080;
+    padding: 2vh;
+    margin: 10vh;
+}
+
+.judging-panel-2 {
+    background-color: #455A64;
+    padding: 2vh;
+    margin: 10vh;
+}
+
+input[type="range"] { 
+    margin: auto;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 0; /* iOS */
+}
+
+::-webkit-slider-runnable-track {
+    background: #ddd;
+}
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ */
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px; /* 1 */
+    height: 40px;
+    background: #fff;
+    box-shadow: -100vw 0 0 100vw dodgerblue;
+    border: 2px solid #999; /* 1 */
+}
+
+::-moz-range-track {
+    height: 40px;
+    background: #ddd;
+}
+
+::-moz-range-thumb {
+    background: #fff;
+    height: 40px;
+    width: 20px;
+    border: 3px solid #999;
+    border-radius: 0 !important;
+    box-shadow: -100vw 0 0 100vw dodgerblue;
+    box-sizing: border-box;
+}
+
+::-ms-fill-lower { 
+    background: dodgerblue;
+}
+
+::-ms-thumb { 
+    background: #fff;
+    border: 2px solid #999;
+    height: 40px;
+    width: 20px;
+    box-sizing: border-box;
+}
+
+::-ms-ticks-after { 
+    display: none; 
+}
+
+::-ms-ticks-before { 
+    display: none; 
+}
+
+::-ms-track { 
+    background: #ddd;
+    color: transparent;
+    height: 40px;
+    border: none;
+}
+
+::-ms-tooltip { 
+    display: none;
+}
+
+/* LOADING SCREEN */
+
+/* Absolute Center Spinner */
+.loading {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+}
+
+/* Transparent Overlay */
+.loading:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+/* :not(:required) hides these rules from IE9 and below */
+.loading:not(:required) {
+    /* hide "loading..." text */
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.loading:not(:required):after {
+    content: '';
+    display: block;
+    font-size: 10px;
+    width: 50px;
+    height: 50px;
+    margin-top: -0.5em;
+    border: 15px solid rgba(33, 150, 243, 1.0);
+    border-radius: 100%;
+    border-bottom-color: transparent;
+    -webkit-animation: spinner 1s linear 0s infinite;
+    animation: spinner 1s linear 0s infinite;
+}
+
+/* Animation */
+
+@-webkit-keyframes spinner {
+0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+}
+@-moz-keyframes spinner {
+0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+}
+@-o-keyframes spinner {
+0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+}
+@keyframes spinner {
+0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+}
+
+/* FORM */
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+
+form {
+    z-index: 98;
+}
+form label {
+    color: #390072;
+}
+/* TEXT FORM */
+form input[type="text"] {
+    appearance: none;
+    outline: 0;
+    border: 0.3vh solid #390072;
+    width: 18vw;
+    border-radius: 12px;
+    padding: 1.4vh 4vw;
+    margin: 0 auto 0px auto;
+    display: block;
+    text-align: center;
+    font-size: 2.4vmin;
+    color: #390072;
+    transition-duration: 0.5s;
+    font-weight: 500;
+}
+form input[type="text"]:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #390072;
+}
+form input[type="text"]:focus {
+    background-color: white;
+    width: 26vw;
+    color: #390072;
+}
+/* PASSWORD FORM */
+form input[type="password"] {
+    appearance: none;
+    outline: 0;
+    border: 0.3vh solid #390072;
+    width: 18vw;
+    border-radius: 12px;
+    padding: 1.4vh 4vw;
+    margin: 0 auto 0px auto;
+    display: block;
+    text-align: center;
+    font-size: 2.4vmin;
+    color: #390072;
+    transition-duration: 0.5s;
+    font-weight: 500;
+}
+form input[type="password"]:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #390072;
+}
+form input[type="password"]:focus {
+    background-color: white;
+    width: 26vw;
+    color: #390072;
+}
+/* EMAIL FORM */
+form input[type="email"] {
+    appearance: none;
+    outline: 0;
+    border: 0.3vh solid #390072;
+    width: 18vw;
+    border-radius: 12px;
+    padding: 1.4vh 4vw;
+    margin: 0 auto 0px auto;
+    display: block;
+    text-align: center;
+    font-size: 2.4vmin;
+    color: #390072;
+    transition-duration: 0.5s;
+    font-weight: 500;
+}
+form input[type="email"]:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #390072;
+}
+form input[type="email"]:focus {
+    background-color: white;
+    width: 26vw;
+    color: #390072;
+}
+/* URL FORM */
+form input[type="url"] {
+    appearance: none;
+    outline: 0;
+    border: 0.3vh solid #390072;
+    width: 18vw;
+    border-radius: 12px;
+    padding: 1.4vh 4vw;
+    margin: 0 auto 0px auto;
+    display: block;
+    text-align: center;
+    font-size: 2.4vmin;
+    color: #390072;
+    transition-duration: 0.5s;
+    font-weight: 500;
+}
+form input[type="url"]:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #390072;
+}
+form input[type="url"]:focus {
+    background-color: white;
+    width: 26vw;
+    color: #390072;
+}
+
+/* URL FORM */
+form textarea {
+    appearance: none;
+    outline: 0;
+    border: 0.3vh solid #390072;
+    width: 18vw;
+    border-radius: 12px;
+    padding: 1.4vh 4vw;
+    margin: 0 auto 0px auto;
+    display: block;
+    text-align: center;
+    font-size: 2.4vmin;
+    color: #390072;
+    transition-duration: 0.5s;
+    font-weight: 500;
+}
+form textarea:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #390072;
+}
+form textarea:focus {
+    background-color: white;
+    width: 26vw;
+    color: #390072;
+}
+/* SELECT FORM */
+form select {
+    appearance: none;
+    outline: 0;
+    border: 0.3vh solid #390072;
+    width: 18vw;
+    border-radius: 12px;
+    padding: 1.4vh 4vw;
+    margin: 0 auto 0px auto;
+    display: block;
+    text-align: center;
+    font-size: 2.4vmin;
+    color: #390072;
+    transition-duration: 0.5s;
+    font-weight: 500;
+}
+form select:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #390072;
+}
+form select:focus {
+    background-color: white;
+    color: #390072;
+}
+/* URL FORM */
+.banner {
+    appearance: none;
+    outline: 0;
+    border: 0.3vh solid #390072;
+    width: 18vw;
+    border-radius: 12px;
+    padding: 1.4vh 4vw;
+    margin: 0 auto 0px auto;
+    display: block;
+    text-align: center;
+    font-size: 2vw;
+    color: #390072;
+    transition-duration: 0.5s;
+    font-weight: 500;
+}
+.banner:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #390072;
+}
+.banner:focus {
+    background-color: white;
+    color: #390072;
+}
+
+.banner-submitted {
+    appearance: none;
+    outline: 0;
+    border: 0.3vh solid #390072;
+    width: 18vw;
+    border-radius: 12px;
+    padding: 1.4vh 4vw;
+    margin: 0 auto 0px auto;
+    display: block;
+    text-align: center;
+    font-size: 1vw;
+    color: #390072;
+    transition-duration: 0.5s;
+    font-weight: 500;
+}
+.banner-submitted:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #390072;
+}
+.banner-submitted:focus {
+    background-color: white;
+    color: #390072;
+}
+
+
+#email-password-form {
+    text-align: center;
+}
