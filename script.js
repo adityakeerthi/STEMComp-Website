@@ -21,7 +21,6 @@ const logo = document.getElementById("logo");
 const thirteenLeft = document.getElementsByClassName("thirteen-left");
 const contactText = document.getElementById("contact-text");
 const bigLogo = document.getElementsByClassName("sponsor-logo-l");
-const airboss = document.getElementById("airboss");
 const ig = document.getElementById("ig");
 const fb = document.getElementById("fb");
 const mail = document.getElementById("mail");
@@ -92,7 +91,6 @@ function styleChange(display) {
         for(let i=0; i<bigLogo.length; i++){
             bigLogo[i].style.height = "30vw";
         }
-        airboss.style.height = "40vw";
         epp.style.marginTop = "7vh";
         mail.classList.remove("col-11");
         mail.classList.add("col-10");
@@ -163,7 +161,6 @@ function styleChange(display) {
         for(let i=0; i<bigLogo.length; i++){
             bigLogo[i].style.height = "15vw";
         }
-        airboss.style.height = "20vw";
         epp.style.marginTop = "15vh";
         mail.classList.remove("col-10");
         mail.classList.add("col-11");
