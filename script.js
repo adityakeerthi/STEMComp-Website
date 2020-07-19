@@ -31,6 +31,7 @@ const navigationBar = document.getElementById("navigation-bar");
 const aboutBtn = document.getElementById("about-btn");
 const detailsBtn = document.getElementById("deets-btn");
 const prizesBtn = document.getElementById("prizes-btn");
+const judgesBtn = document.getElementById("judges-btn");
 const sponsorsBtn = document.getElementById("sponsors-btn");
 const contactBtn = document.getElementById("contact-btn");
 const regBtn = document.getElementById("reg-btn");
@@ -102,6 +103,7 @@ function styleChange(display) {
         aboutBtn.style.fontSize = "1.2vmax";
         detailsBtn.style.fontSize = "1.2vmax";
         prizesBtn.style.fontSize = "1.2vmax";
+        judgesBtn.style.fontSize = "1.2vmax";
         sponsorsBtn.style.fontSize = "1.2vmax";
         contactBtn.style.fontSize = "1.2vmax";
         regBtn.style.fontSize = "1.2vmax";
@@ -171,6 +173,7 @@ function styleChange(display) {
         aboutBtn.style.fontSize = "1vmax";
         detailsBtn.style.fontSize = "1vmax";
         prizesBtn.style.fontSize = "1vmax";
+        judgesBtn.style.fontSize = "1vmax";
         sponsorsBtn.style.fontSize = "1vmax";
         contactBtn.style.fontSize = "1vmax";
         regBtn.style.fontSize = "1vmax";
@@ -243,6 +246,7 @@ function titleChange3(display) {
         aboutBtn.style.fontSize = "2vmax";
         detailsBtn.style.fontSize = "2vmax";
         prizesBtn.style.fontSize = "2vmax";
+        judgesBtn.style.fontSize = "2vmax";
         sponsorsBtn.style.fontSize = "2vmax";
         contactBtn.style.fontSize = "2vmax";
         regBtn.style.fontSize = "2vmax";
@@ -257,6 +261,7 @@ function titleChange3(display) {
         aboutBtn.style.fontSize = "1vmax";
         detailsBtn.style.fontSize = "1vmax";
         prizesBtn.style.fontSize = "1vmax";
+        judgesBtn.style.fontSize = "1vmax";
         sponsorsBtn.style.fontSize = "1vmax";
         contactBtn.style.fontSize = "1vmax";
         regBtn.style.fontSize = "1vmax";
