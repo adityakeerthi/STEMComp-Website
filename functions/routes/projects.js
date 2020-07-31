@@ -6,6 +6,8 @@ exports.submission = (req, res) => {
         description: req.body.description,
         category: req.body.category,
         youtubeURL: req.body.youtubeURL,
+        specialPrize1: req.body.specialprize1,
+        specialPrize2: req.body.specialprize2,
         uid: req.user.uid,
         email: req.user.email,
         assigned: [],

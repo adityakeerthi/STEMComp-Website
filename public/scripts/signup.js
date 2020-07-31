@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', e => {
             <section class="signuprow">
                 <section id="primary" class="signupcolumn">
                     <form id="signup-personal-information-primary">
-                        <label for="first-name-primary">First name</label><br>
+                        <label for="first-name-primary">Group Member #1's First name</label><br>
                         <input type="text" id="first-name-primary" size="30" placeholder="i.e. John" required /><br>
                         <p id="primaryFirstName"></p>
                         
-                        <label for="last-name-primary">Last name</label><br>
+                        <label for="last-name-primary">Group Member #1's Last name</label><br>
                         <input type="text" id="last-name-primary" size="30" placeholder="i.e. Smith" required /><br>
                         <p id="primaryLastName"></p>
 
@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', e => {
                 </section>
                 <section id="secondary" class="signupcolumn">
                     <form id="signup-personal-information-secondary">
-                        <label for="first-name-secondary">First name</label><br>
+                        <label for="first-name-secondary">Group Member #2's First name</label><br>
                         <input type="text" id="first-name-secondary" size="30" placeholder="i.e. John" required /><br>
                         <p id="secondaryFirstName"></p>
 
-                        <label for="last-name-secondary">Last name</label><br>
+                        <label for="last-name-secondary">Group Member #2's Last name</label><br>
                         <input type="text" id="last-name-secondary" size="30" placeholder="i.e. Smith" required /><br>
                         <p id="secondaryLastName"></p>
 
@@ -53,23 +53,23 @@ document.addEventListener('DOMContentLoaded', e => {
             <section class="signuprow">
                 <section id="primary" class="signupcolumn">
                     <form id="signup-shipping-address-primary">
-                        <label for="street-number-primary">Street Number</label><br>
+                        <label for="street-number-primary">Group Member #1's Street Number</label><br>
                         <input type="text" id="street-number-primary" size="30" placeholder="i.e. 123" required /><br>
                         <p id="primaryStreetNumber"></p>
 
-                        <label for="street-name-primary">Street Name</label><br>
+                        <label for="street-name-primary">Group Member #1's Street Name</label><br>
                         <input type="text" id="street-name-primary" size="30" placeholder="i.e. Alphabet Road" required /><br>
                         <p id="primaryStreetName"></p>
 
-                        <label for="apartment-number-primary">Apartment number (leave blank if not applicable)</label><br>
+                        <label for="apartment-number-primary">Group Member #1's Apartment number (leave blank if not applicable)</label><br>
                         <input type="text" id="apartment-number-primary" size="30" /><br>
                         <p id="primaryApartmentNumber"></p>
 
-                        <label for="postal-code-primary">Postal code</label><br>
+                        <label for="postal-code-primary">Group Member #1's Postal code</label><br>
                         <input type="text" id="postal-code-primary" size="30" required /><br>
                         <p id="primaryPostalCode"></p>
 
-                        <label for="city-primary">City</label><br>
+                        <label for="city-primary">Group Member #1's City</label><br>
                         <input type="text" id="city-primary" size="30" required /><br>
                         <p id="primaryCity"></p>
 
@@ -77,23 +77,23 @@ document.addEventListener('DOMContentLoaded', e => {
                 </section>
                 <section id="secondary" class="signupcolumn">
                     <form id="signup-shipping-address-secondary">
-                        <label for="street-number-secondary">Street Number</label><br>
+                        <label for="street-number-secondary">Group Member #2's Street Number</label><br>
                         <input type="text" id="street-number-secondary" size="30" placeholder="i.e. 123" required /><br>
                         <p id="secondaryStreetNumber"></p>
 
-                        <label for="street-name-secondary">Street Name</label><br>
+                        <label for="street-name-secondary">Group Member #2's Street Name</label><br>
                         <input type="text" id="street-name-secondary" size="30" placeholder="i.e. Alphabet Road" required /><br>
                         <p id="secondaryStreetName"></p>
 
-                        <label for="apartment-number-secondary">Apartment number (leave blank if not applicable)</label><br>
+                        <label for="apartment-number-secondary">Group Member #2's Apartment number (leave blank if not applicable)</label><br>
                         <input type="text" id="apartment-number-secondary" size="30" /><br>
                         <p id="secondaryApartmentNumber"></p>
 
-                        <label for="postal-code-secondary">Postal code</label><br>
+                        <label for="postal-code-secondary">Group Member #2's Postal code</label><br>
                         <input type="text" id="postal-code-secondary" size="30" required /><br>
                         <p id="secondaryPostalCode"></p>
 
-                        <label for="city-secondary">City</label><br>
+                        <label for="city-secondary">Group Member #2's City</label><br>
                         <input type="text" id="city-secondary" size="30" required /><br>
                         <p id="secondaryCity"></p>
 
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', e => {
             <section class="signuprow">
                 <section id="primary" class="signupcolumn">
                     <form id="signup-academic-information-primary">
-                        <label for="grade-primary">Grade</label><br>
+                        <label for="grade-primary">Group Member #1's Grade</label><br>
                         <select id="grade-primary">
                             <option value= "9">9</option>
                             <option value="10">10</option>
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', e => {
                         </select><br>
                         <p id="primaryGrade"></p>
 
-                        <label for="school-primary">School [No abbreviations]</label><br>
+                        <label for="school-primary">Group Member #1's School [No abbreviations]</label><br>
                         <input type="text" id="school-primary" size="30" placeholder="i.e Science Collegiate Institute" required /><br>
                         <p id="primarySchool"></p>
 
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', e => {
                 </section>
                 <section id="secondary" class="signupcolumn">
                     <form id="signup-academic-information-secondary">
-                        <label for="grade-secondary">Grade</label><br>
+                        <label for="grade-secondary">Group Member #2's Grade</label><br>
                         <select id="grade-secondary">
                             <option value= "9">9</option>
                             <option value="10">10</option>
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', e => {
                         <p id="secondaryGrade"></p>
 
 
-                        <label for="school-secondary">School [No abbreviations]</label><br>
+                        <label for="school-secondary">Group Member #2's School [No abbreviations]</label><br>
                         <input type="text" id="school-secondary" size="30" placeholder="i.e Science Collegiate Institute " required /><br>
                         <p id="secondarySchool"></p>
 

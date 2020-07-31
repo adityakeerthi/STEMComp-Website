@@ -75,7 +75,7 @@ label {
 
 iframe {
     border: none;
-    height: 60vmin;
+    height: 46vh;
     width: 100%;
     padding-left: 10vmin;
     padding-right: 10vmin;
@@ -374,6 +374,18 @@ button:hover {
     width: 50%;
 }
 
+.judge-row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 2vh;
+}
+
+.judge-column {
+    float: left;
+    width: 50%;
+}
+
 .judging-panel-1 {
     background-color: #F08080;
     padding: 2vh;
@@ -391,8 +403,8 @@ input[type="range"] {
     -webkit-appearance: none;
     position: relative;
     overflow: hidden;
-    height: 40px;
-    width: 200px;
+    height: 4vh;
+    width: 30vw;
     cursor: pointer;
     border-radius: 0; /* iOS */
 }
@@ -722,7 +734,7 @@ form select {
     border: 0.3vh solid #390072;
     width: 18vw;
     border-radius: 12px;
-    padding: 1.4vh 4vw;
+    padding: 1.4vh 1.4vw;
     margin: 0 auto 0px auto;
     display: block;
     text-align: center;
@@ -764,6 +776,86 @@ form select:focus {
     color: #390072;
 }
 
+.mark-banner {
+    appearance: none;
+    outline: 0;
+    border: 0.3vh solid #390072;
+    /* width: 18vw; */
+    border-radius: 12px;
+    padding: 1.4vh 4vw;
+    /* margin: 0 auto 0px auto; */
+    margin-bottom: 2vh;
+    display: block;
+    text-align: center;
+    font-size: 2vw;
+    color: #390072;
+    transition-duration: 0.5s;
+    font-weight: 500;
+}
+.mark-banner:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #390072;
+}
+.mark-banner:focus {
+    background-color: white;
+    color: #390072;
+}
+
+.full-banner {
+    appearance: none;
+    outline: 0;
+    border: 0.3vh solid #390072;
+    width: 36vw;
+    border-radius: 12px;
+    padding: 1.4vh 4vw;
+    margin: 0 auto 0px auto;
+    display: block;
+    text-align: center;
+    font-size: 2vw;
+    color: #390072;
+    transition-duration: 0.5s;
+    font-weight: 500;
+}
+.full-banner:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #390072;
+}
+.full-banner:focus {
+    background-color: white;
+    color: #390072;
+}
+
+.judge-banner {
+    appearance: none;
+    outline: 0;
+    border: 0.3vh solid #390072;
+    width: 78vw;
+    border-radius: 12px;
+    padding: 1.4vh 1.4vw;
+    margin: 0 auto 0px auto;
+    display: block;
+    text-align: center;
+    font-size: 2vw;
+    color: #390072;
+    transition-duration: 0.5s;
+    font-weight: 500;
+}
+
+.judge-title {
+    padding-top: 3vh;
+    padding-bottom: 4vh;
+    font-size: 4vw;
+}
+
+.judge-banner:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #390072;
+}
+.judge-banner:focus {
+    background-color: white;
+    color: #390072;
+}
+
 .banner-submitted {
     appearance: none;
     outline: 0;
@@ -771,7 +863,7 @@ form select:focus {
     width: 18vw;
     border-radius: 12px;
     padding: 1.4vh 4vw;
-    margin: 0 auto 0px auto;
+    margin: 0 auto 2.5vh auto;
     display: block;
     text-align: center;
     font-size: 1vw;
@@ -788,6 +880,29 @@ form select:focus {
     color: #390072;
 }
 
+.judge-info-banner {
+    appearance: none;
+    outline: 0;
+    border: 0.3vh solid #390072;
+    width: 18vw;
+    border-radius: 12px;
+    padding: 1.4vh 1.4vw;
+    margin: 0 auto 2.5vh auto;
+    display: block;
+    text-align: center;
+    font-size: 1vw;
+    color: #390072;
+    transition-duration: 0.5s;
+    font-weight: 500;
+}
+.judge-info-banner:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #390072;
+}
+.judge-info-banner:focus {
+    background-color: white;
+    color: #390072;
+}
 
 #email-password-form {
     text-align: center;

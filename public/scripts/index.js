@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', e => {
     const TOKEN = localStorage.getItem('UserToken');
 
     if (!TOKEN) {
-        document.getElementById('title-btn').innerHTML = `
-            <a href="./pages/register.html"><button style="font-weight: bold;" id="register-button" class="register-button"> Register </button></a>
-        `
+        // document.getElementById('title-btn').innerHTML = `
+        //     <a  href=""><button style="font-weight: bold;" id="register-button" class="register-button"> View this year's projects! </button></a>
+        // `
         document.getElementById('index-navbar').innerHTML = `
             <li class="nav-item">
                 <a href="./pages/register.html"><button id="reg-btn" class="login-button">Register</button></a>
@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', e => {
             .then(response => response.text())
             .then(result => {
                 if (result === 'Authorized') {
-                    document.getElementById('title-btn').innerHTML = `
-                        <a href='./pages/dashboard.html' ><button style="font-weight: bold;" id="register-button" class="register-button"> Dashboard </button></a>
-                    `
+                    // document.getElementById('title-btn').innerHTML = `
+                    //     <a  href='' ><button style="font-weight: bold;" id="register-button" class="register-button"> View this year's projects! </button></a>
+                    // `
                     
                     document.getElementById('index-navbar').innerHTML = `
                         <li class="nav-item">
@@ -52,9 +52,9 @@ document.addEventListener('DOMContentLoaded', e => {
                     })
                     
                 } else if (result === 'Unauthorized' || result === 'Token has expired') {
-                    document.getElementById('title-btn').innerHTML = `
-                        <a href="./pages/register.html"><button style="font-weight: bold;" id="register-button" class="register-button"> Register </button></a>
-                    `
+                    // document.getElementById('title-btn').innerHTML = `
+                    //     <a  href=""><button style="font-weight: bold;" id="register-button" class="register-button"> View this year's projects! </button></a>
+                    // `
                     document.getElementById('index-navbar').innerHTML = `
                         <li class="nav-item">
                             <a href="./pages/register.html"><button id="reg-btn" class="login-button">Register</button></a>

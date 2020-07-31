@@ -21,7 +21,6 @@ const logo = document.getElementById("logo");
 const thirteenLeft = document.getElementsByClassName("thirteen-left");
 const contactText = document.getElementById("contact-text");
 const bigLogo = document.getElementsByClassName("sponsor-logo-l");
-const airboss = document.getElementById("airboss");
 const ig = document.getElementById("ig");
 const fb = document.getElementById("fb");
 const mail = document.getElementById("mail");
@@ -32,6 +31,7 @@ const navigationBar = document.getElementById("navigation-bar");
 const aboutBtn = document.getElementById("about-btn");
 const detailsBtn = document.getElementById("deets-btn");
 const prizesBtn = document.getElementById("prizes-btn");
+const judgesBtn = document.getElementById("judges-btn");
 const sponsorsBtn = document.getElementById("sponsors-btn");
 const contactBtn = document.getElementById("contact-btn");
 // const regBtn = document.getElementById("reg-btn");
@@ -92,7 +92,6 @@ function styleChange(display) {
         for(let i=0; i<bigLogo.length; i++){
             bigLogo[i].style.height = "30vw";
         }
-        airboss.style.height = "40vw";
         epp.style.marginTop = "7vh";
         mail.classList.remove("col-11");
         mail.classList.add("col-10");
@@ -104,6 +103,7 @@ function styleChange(display) {
         aboutBtn.style.fontSize = "1.2vmax";
         detailsBtn.style.fontSize = "1.2vmax";
         prizesBtn.style.fontSize = "1.2vmax";
+        judgesBtn.style.fontSize = "1.2vmax";
         sponsorsBtn.style.fontSize = "1.2vmax";
         contactBtn.style.fontSize = "1.2vmax";
         // regBtn.style.fontSize = "1.2vmax";
@@ -163,7 +163,6 @@ function styleChange(display) {
         for(let i=0; i<bigLogo.length; i++){
             bigLogo[i].style.height = "15vw";
         }
-        airboss.style.height = "20vw";
         epp.style.marginTop = "15vh";
         mail.classList.remove("col-10");
         mail.classList.add("col-11");
@@ -174,6 +173,7 @@ function styleChange(display) {
         aboutBtn.style.fontSize = "1vmax";
         detailsBtn.style.fontSize = "1vmax";
         prizesBtn.style.fontSize = "1vmax";
+        judgesBtn.style.fontSize = "1vmax";
         sponsorsBtn.style.fontSize = "1vmax";
         contactBtn.style.fontSize = "1vmax";
         // regBtn.style.fontSize = "1vmax";
@@ -246,6 +246,7 @@ function titleChange3(display) {
         aboutBtn.style.fontSize = "2vmax";
         detailsBtn.style.fontSize = "2vmax";
         prizesBtn.style.fontSize = "2vmax";
+        judgesBtn.style.fontSize = "2vmax";
         sponsorsBtn.style.fontSize = "2vmax";
         contactBtn.style.fontSize = "2vmax";
         // regBtn.style.fontSize = "2vmax";
@@ -260,6 +261,7 @@ function titleChange3(display) {
         aboutBtn.style.fontSize = "1vmax";
         detailsBtn.style.fontSize = "1vmax";
         prizesBtn.style.fontSize = "1vmax";
+        judgesBtn.style.fontSize = "1vmax";
         sponsorsBtn.style.fontSize = "1vmax";
         contactBtn.style.fontSize = "1vmax";
         // regBtn.style.fontSize = "1vmax";
@@ -311,6 +313,7 @@ wideView.addListener(adjustWide);
 // first display
 firstDisplay(smallView);
 
+
 // ANIMATE ON SCROLL 
 function toAbout() {
     $("html, body").delay(0).animate({scrollTop: $('#video').offset().top }, 1500);
@@ -324,10 +327,18 @@ function toPrizes() {
     $("html, body").delay(0).animate({scrollTop: $('#prizes').offset().top }, 1500);
 }
 
+function toJudgingPanel() {
+    $("html, body").delay(0).animate({scrollTop: $('#judges').offset().top }, 1500);
+}
+
 function toSponsors() {
     $("html, body").delay(0).animate({scrollTop: $('#sponsors').offset().top }, 1500);
 }
 
 function toContact() {
     $("html, body").delay(0).animate({scrollTop: $('#contact').offset().top }, 1500);
+}
+
+function toWinners() {
+    $("html, body").delay(0).animate({scrollTop: $('#winner-section').offset().top }, 1500);
 }

@@ -1,3 +1,4 @@
+/* eslint-disable promise/no-nesting */
 const { admin } = require('../util/admin');
 
 const firebase = require('firebase');
@@ -147,24 +148,38 @@ exports.userData = (req, res) => {
     const year = today.getFullYear();
     const month = (today.getMonth() + 1);
     const day = today.getDate();
-    
+    const hours = today.getHours();
+    const minutes = today.getMinutes();
+    console.log(day, hours, minutes);
+
     if (year !== 2020) {
         req.userDB.timePeriod = 'Over';
     } else {
-        if (month <= 5) {
-            req.userDB.timePeriod = 'Needs to launch';
-        } else if (month === 6 || month === 7 && day === 1) {
-            req.userDB.timePeriod = 'Project Submission';
-        } else if (month === 7 && day > 1 && day < 10) {
-            req.userDB.timePeriod = 'Judging';
+        if (month === 7) {
+            if (day <= 2) {
+                if (hours <= 3 && minutes <= 59) {
+                    req.userDB.timePeriod = 'Project Submission';
+                } else if (hours > 3) {
+                    req.userDB.timePeriod = 'Judging';
+                }
+            } else if (day >= 3 && day <= 9) {
+                if (day === 9) {
+                    if (hours <= 3 && minutes <= 59) {
+                        req.userDB.timePeriod = 'Judging';
+                    } else if (hours > 3) {
+                        req.userDB.timePeriod = 'Over';
+                    }
+                } else {
+                    req.userDB.timePeriod = 'Judging';
+                }
+            } else {
+                req.userDB.timePeriod = 'Over';
+            }
         } else {
             req.userDB.timePeriod = 'Over';
         }
     }
-    // req.userDB.timePeriod = 'Project Submission';
-
     req.userDB.userSubmission = req.userSubmission;
-
 
     res.send(req.userDB);
 }

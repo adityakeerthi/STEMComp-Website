@@ -17,7 +17,8 @@ var corsOptions = {
     }
 }
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
+app.use(cors());
 
 // Middleware
 const AUTH_MIDDLEWARE = require('./middleware/auth');
@@ -28,22 +29,22 @@ const { signup, login, validateAuthorization, userData } = require('./routes/acc
 const { getProjectsToJudge, judgeProjectOne, judgeProjectTwo, getProjectsScores } = require('./routes/judging');
 
 // Account Routes
-app.post('/signup', signup);
-app.post('/login', login);
-app.post('/validateAuthorization', validateAuthorization);
-app.post('/userData', AUTH_MIDDLEWARE, userData);
+app.post('/signup', cors(corsOptions), signup);
+app.post('/login', cors(corsOptions), login);
+app.post('/validateAuthorization', cors(corsOptions), validateAuthorization);
+app.post('/userData', cors(corsOptions), AUTH_MIDDLEWARE, userData);
 
 // Submission Routes
-app.post('/submission', AUTH_MIDDLEWARE, submission);
-app.get('/deleteSubmission', AUTH_MIDDLEWARE, deleteSubmission);
+app.post('/submission', cors(corsOptions), AUTH_MIDDLEWARE, submission);
+app.get('/deleteSubmission', cors(corsOptions), AUTH_MIDDLEWARE, deleteSubmission);
 
 // Onload Routes
-app.post('/assign', AUTH_MIDDLEWARE, assign);
+app.post('/assign', cors(corsOptions), AUTH_MIDDLEWARE, assign);
 
 // Judging Routes
-app.post('/projectsToJudge', AUTH_MIDDLEWARE, getProjectsToJudge);
-app.post('/judgeProjectOne', AUTH_MIDDLEWARE, judgeProjectOne);
-app.post('/judgeProjectTwo', AUTH_MIDDLEWARE, judgeProjectTwo);
+app.post('/projectsToJudge', cors(corsOptions), AUTH_MIDDLEWARE, getProjectsToJudge);
+app.post('/judgeProjectOne', cors(corsOptions), AUTH_MIDDLEWARE, judgeProjectOne);
+app.post('/judgeProjectTwo', cors(corsOptions), AUTH_MIDDLEWARE, judgeProjectTwo);
 app.get('/getProjectsScores', AUTH_MIDDLEWARE, getProjectsScores)
 
 // Exporting 
